@@ -1,0 +1,229 @@
+/* Basic Reset and Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e9e0e0;
+
+    
+        background-color: #714b67;
+        background: linear-gradient(to right, #f0eaed, #be9bbe);
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        flex-direction: column;
+        height: 100vh;
+
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #bab5c086; */
+    color: #fff;
+    padding: 10px 20px;
+    height: 70px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #814c73;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navlink:hover{
+    text-decoration: underline;
+}
+.nav-links a:hover {
+    color:  #0b030c;
+}
+
+/* Main Content Styles */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.task-list {
+    width: 80%;
+    margin: auto;
+    /* border-radius: 10px solid black; */
+}
+
+.task-item {
+    background-color: #dac4d5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.555);
+    border-radius: 15px;
+}
+
+.task-item h3 {
+    margin-bottom: 5px;
+}
+
+.task-item p{
+    font-size: large;
+    color: rgb(2, 0, 3);
+}
+
+.task-item div p{
+    border: #0b030c;
+    border-radius: 10px ;
+}
+
+.task-actions {
+    margin-top: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 5px 10px;
+    background-color: #734697;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+    background-color: #b173b1;
+}
+
+.task-form {
+    background-color: #e0c4d8;
+    padding: 20px;
+    margin-top: 20px;
+        /* border: 4px solid #814c73; */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.555);
+}
+
+.task-form h2 {
+    margin-bottom: 10px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select,
+.task-form button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #f1e2f1;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+}
+
+.logo1 {
+    width: 300px;
+    height: 200px;
+    margin-top: 7px;
+    margin-left: -35px;
+}
+
+/* Search Section Styles */
+.search-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    margin-top: 25PX;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 300px; /* Adjust width as needed */
+    border-radius: 15px;
+
+}
+
+.btn-search {
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #814c73;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+
+}
+
+.btn-search:hover {
+    background-color: #b173b1;
+}
+
+.task-container{
+    border-radius: 100px;
+}
+
+/* Example styles for footer */
+
+footer {
+    /* background-color: #b173b1; */
+    color: #0a0a0a;
+    text-align: center;
+    padding: 10px 10;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4%;
+    background: linear-gradient(to right, #f0eaed, #be9bbe);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#backToTopBtn {
+    position: fixed; /* Keep the button in a fixed position */
+    bottom: 30px; /* Position it 20px from the bottom */
+    right: 20px; /* Position it 20px from the right */
+    padding: 10px 20px; /* Button padding */
+    text-align: center;
+    border:#714b67 ;border-collapse: collapse; /* Remove border */
+    border-radius: 30px; /* Add rounded corners */
+    color: #714b67;
+    font-weight: 1000;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    opacity: 0; /* Initially hide the button */
+    transition: opacity 0.5s ease; /* Add smooth transition for fade-in */
+  }
+  
+  #backToTopBtn.show { /* Style for the button when shown */
+    opacity: 1; /* Make the button visible */
+  }
+  
+
+
